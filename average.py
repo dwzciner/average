@@ -1,5 +1,4 @@
 import os
-from tensorboard.compat.tensorflow_stub.dtypes import double
 
 filepath = input("enter filepath")
 test_result = "test_result.log"
@@ -12,7 +11,7 @@ avg_acc = []
 with open(full_test_result, 'r') as file:
     lines = file.readlines()
     for line in lines:
-        acc.append(double(line.split()[-1]))
+        acc.append(float(line.split()[-1]))
 
 acc10 = sum(acc[:50]) / 50
 acc50 = sum(acc[50 : 100]) / 50
