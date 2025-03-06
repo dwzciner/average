@@ -11,7 +11,8 @@ avg_acc = []
 with open(full_test_result, 'r') as file:
     lines = file.readlines()
     for line in lines:
-        acc.append(float(line.split()[-1]))
+        clean_s = re.sub(r'\x1b\[[0-9;]*m', '',line.split()[-1])
+        acc.append(float(clean_s))
 
 acc10 = max(acc[:50])
 acc50 = max(acc[50 : 100])
