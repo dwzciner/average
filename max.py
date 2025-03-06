@@ -26,4 +26,4 @@ with open(full_avg_test_result, 'w') as file:
     file.write(f"classes : 50  max test acc: {acc50}\n")
     file.write(f"classes : 100  max test acc: {acc100}\n")
     file.write(f"classes : 200  max test acc: {acc200}\n")
-    file.write(f"classes : 600  max test acc: {acc600}")
+    file.write(f"classes : 600  max test acc: {acc600}\n")
