@@ -22,8 +22,8 @@ acc200 = sum(acc[150:200]) / 50
 acc600 = sum(acc[200:250]) / 50
 
 with open(full_avg_test_result, 'w') as file:
-    file.write(f"classes : 10  test acc: {acc10}\n")
-    file.write(f"classes : 50  test acc: {acc50}\n")
-    file.write(f"classes : 100  test acc: {acc100}\n")
-    file.write(f"classes : 200  test acc: {acc200}\n")
-    file.write(f"classes : 600  test acc: {acc600}")
+    file.write(f"classes : 10  avg test acc: {acc10}\n")
+    file.write(f"classes : 50  avg test acc: {acc50}\n")
+    file.write(f"classes : 100  avg test acc: {acc100}\n")
+    file.write(f"classes : 200  avg test acc: {acc200}\n")
+    file.write(f"classes : 600  avg test acc: {acc600}\n")
