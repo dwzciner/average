@@ -1,4 +1,5 @@
 import os
+import re 
 
 filepath = input("enter filepath")
 test_result = "test_result.log"
